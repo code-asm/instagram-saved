@@ -4,6 +4,27 @@
     <base href="" />
     <style type="text/css" nonce="vugF0tY9">
       html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+      *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+      @media only screen and (max-width: 768px) {
+  /* Adjust styles here for mobile layout, 
+     e.g., reduce font size, stack elements vertically */
+  body {
+    font-size: 14px;
+  }
+
+  .content {
+    width: 100%; /* Make elements fit screen width */
+  }
+}
+
+      
+      html {
         touch-action: manipulation;
       }
       body {
